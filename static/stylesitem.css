@@ -1,0 +1,94 @@
+/* Universal browser reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+ 
+ 
+ /* Style the navbar */
+ #navbar {
+  overflow: hidden;
+  background-color: whitesmoke;
+  width: 100%;
+  padding-left: 0;
+  display: inline-block;
+  text-align: center;
+  position: sticky;
+  z-index: 99 !important; 
+}
+
+/* Navbar links */
+#navbar a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  position: sticky;
+}
+
+
+/* Page content */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+body{
+  margin-left: 0;
+  margin-right: 0;
+  background-color: whitesmoke;
+}
+
+.subelements{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.saleitem {
+  margin:25px;
+  margin-left: -60%;
+  width: 500px;
+  height: 500px;
+  border: 1px solid gray;
+  display:inline-flex;    
+  background-color: #f2f2f2;
+  background-size: 500px 500px;
+  border-radius: 2%;
+}
+
+.content{
+  position: relative;
+  color:black;
+  margin-top: 100px;
+  width: 500px;
+  left: 400px;
+  text-decoration: none;
+  font-size:75px;
+}
+
+.salelink{
+  position: absolute;
+  display: inline;
+  height: 500px;
+  width: 500px;
+  text-decoration: none;
+}
+
+#bottom{
+  text-align: center;
+}
+
+
