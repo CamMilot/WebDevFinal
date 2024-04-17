@@ -1,6 +1,6 @@
 # WebDevFinal
 
 ## Requirements
-Python, Postgres Server
-FastAPI, psycopg2, Pandas
-Uvicorn
+Python, Postgres Server \
+FastAPI, psycopg2, Pandas \
+Uvicorn \
