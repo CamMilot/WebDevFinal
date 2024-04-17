@@ -1,0 +1,101 @@
+index,name,price,quantity,link,sale,saleamnt
+1,water bottle,51,5,https://picsum.photos/500/500,1,32
+2,radio,53,18,https://picsum.photos/501/501,0,10
+3,wallet,13,94,https://picsum.photos/500/501,1,13
+4,monitor,48,28,https://picsum.photos/501/502,0,41
+5,model car,34,39,https://picsum.photos/500/502,1,46
+6,shoe lace,17,14,https://picsum.photos/501/503,0,10
+7,toe ring,14,37,https://picsum.photos/500/503,1,33
+8,mp3 player,87,89,https://picsum.photos/501/504,0,19
+9,shawl,38,31,https://picsum.photos/500/504,1,16
+10,toothpaste,26,83,https://picsum.photos/501/505,0,44
+11,key chain,12,9,https://picsum.photos/500/505,1,25
+12,lamp shade,82,42,https://picsum.photos/501/506,0,29
+13,speakers,30,59,https://picsum.photos/500/506,1,13
+14,photo album,13,18,https://picsum.photos/501/507,0,42
+15,lip gloss,31,46,https://picsum.photos/500/501,1,38
+16,shampoo,93,47,https://picsum.photos/501/502,0,21
+17,deodorant ,58,48,https://picsum.photos/500/502,1,35
+18,candy wrapper,77,48,https://picsum.photos/501/503,0,32
+19,seat belt,20,49,https://picsum.photos/500/503,1,25
+20,keys,78,50,https://picsum.photos/501/504,0,33
+21,candle,59,51,https://picsum.photos/500/504,1,39
+22,eye liner,24,51,https://picsum.photos/501/505,0,29
+23,soda can,75,52,https://picsum.photos/500/505,1,28
+24,fake flowers,86,53,https://picsum.photos/501/506,0,31
+25,spoon,47,54,https://picsum.photos/500/506,1,17
+26,toilet,85,54,https://picsum.photos/501/507,0,30
+27,pillow,88,55,https://picsum.photos/500/507,1,37
+28,shark,32.50,56,https://www.fisheries.noaa.gov/s3//2023-06/750x500-Great-White-iStock.jpg,1,-50
+29,coasters,75,57,https://picsum.photos/500/502,1,34
+30,clock,83,57,https://picsum.photos/501/503,0,43
+31,apple,74,58,https://picsum.photos/500/503,1,41
+32,tooth picks,82,59,https://picsum.photos/501/504,0,12
+33,cell phone,84,60,https://picsum.photos/500/504,1,37
+34,bananas,24,60,https://picsum.photos/501/505,0,22
+35,white out,88,61,https://picsum.photos/500/505,1,23
+36,desk,94,62,https://picsum.photos/501/506,0,45
+37,eraser,65,63,https://picsum.photos/500/506,1,28
+38,nail clippers,89,63,https://picsum.photos/501/507,0,49
+39,ring,10,64,https://picsum.photos/500/507,1,21
+40,teddies,6,65,https://picsum.photos/501/508,0,11
+41,wagon,98,66,https://picsum.photos/500/508,1,13
+42,plate,47,66,https://picsum.photos/501/509,0,22
+43,button,84,67,https://picsum.photos/500/503,1,16
+44,pants,35,68,https://picsum.photos/501/504,0,12
+45,perfume,21,69,https://picsum.photos/500/504,1,13
+46,CD,64,69,https://picsum.photos/501/505,0,39
+47,boom box,26,70,https://picsum.photos/500/505,1,23
+48,blouse,75,71,https://picsum.photos/501/506,0,40
+49,cinder block,41,72,https://picsum.photos/500/506,1,43
+50,cookie jar,89,72,https://picsum.photos/501/507,0,39
+51,sharpie,95,73,https://picsum.photos/500/507,1,41
+52,sidewalk,35,74,https://picsum.photos/501/508,0,20
+53,thermometer,51,75,https://picsum.photos/500/508,1,25
+54,mop,61,75,https://picsum.photos/501/509,0,29
+55,computer,35,76,https://picsum.photos/500/509,1,32
+56,blanket,86,77,https://picsum.photos/501/510,0,47
+57,street lights,27,78,https://picsum.photos/500/504,1,18
+58,bowl,25,78,https://picsum.photos/501/505,0,28
+59,fork,5,79,https://picsum.photos/500/505,1,25
+60,tire swing,56,80,https://picsum.photos/501/506,0,44
+61,phone,94,81,https://picsum.photos/500/506,1,17
+62,flag,18,81,https://picsum.photos/501/507,0,17
+63,drawer,67,82,https://picsum.photos/500/507,1,15
+64,food,9,83,https://picsum.photos/501/508,0,11
+65,piano,76,84,https://picsum.photos/500/508,1,41
+66,fridge,45,84,https://picsum.photos/501/509,0,43
+67,money,68,85,https://picsum.photos/500/509,1,42
+68,credit card,53,86,https://picsum.photos/501/510,0,19
+69,newspaper,29,87,https://picsum.photos/500/510,1,14
+70,needle,20,87,https://picsum.photos/501/511,0,26
+71,paint brush,48,88,https://picsum.photos/500/505,1,20
+72,bread,21,89,https://picsum.photos/501/506,0,38
+73,hair tie,81,90,https://picsum.photos/500/506,1,45
+74,box,31,90,https://picsum.photos/501/507,0,14
+75,packing peanuts,69,91,https://picsum.photos/500/507,1,25
+76,brocolli,28,92,https://picsum.photos/501/508,0,33
+77,lotion,32,93,https://picsum.photos/500/508,1,50
+78,vase,25,93,https://picsum.photos/501/509,0,28
+79,sailboat,12,94,https://picsum.photos/500/509,1,38
+80,keyboard,53,95,https://picsum.photos/501/510,0,40
+81,playing card,65,96,https://picsum.photos/500/510,1,28
+82,slipper,72,96,https://picsum.photos/501/511,0,36
+83,pen,83,97,https://picsum.photos/500/511,1,41
+84,shovel,84,98,https://picsum.photos/501/512,0,39
+85,buckle,9,99,https://picsum.photos/500/506,1,24
+86,clamp,19,99,https://picsum.photos/501/507,0,17
+87,lace,32,100,https://picsum.photos/500/507,1,40
+88,ice cube tray,40,101,https://picsum.photos/501/508,0,44
+89,clay pot,42,102,https://picsum.photos/500/508,1,20
+90,flowers,5,102,https://picsum.photos/501/509,0,27
+91,stop sign,79,103,https://picsum.photos/500/509,1,35
+92,car,22,104,https://picsum.photos/501/510,0,32
+93,thread,10,105,https://picsum.photos/500/510,1,30
+94,drill press,85,105,https://picsum.photos/501/511,0,40
+95,pencil,87,106,https://picsum.photos/500/511,1,24
+96,conditioner,67,107,https://picsum.photos/501/512,0,23
+97,pool stick,94,108,https://picsum.photos/500/512,1,36
+98,shirt,79,108,https://picsum.photos/501/513,0,11
+99,doll,46,109,https://picsum.photos/500/507,1,12
+100,charger,79,110,https://picsum.photos/501/508,0,23
