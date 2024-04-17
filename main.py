@@ -58,7 +58,7 @@ def createDivHome(items,request):
     div = Markup(div)
     return div
 
-def createDivItem(items,request,itemid):
+def createDivItem(items,itemid):
     row = items.loc[itemid]
     div = ''
     price = row['price']
@@ -93,5 +93,5 @@ def read_root(request: Request):
 
 @app.get("/items/{item_id}")
 def read_item(request: Request, item_id: int, q: Union[str, None] = None):
-    div = createDivItem(items,request,item_id)
+    div = createDivItem(items,item_id)
     return templates.TemplateResponse("item.html",{"request":request,"test":div,"linebreak":linebreaks})
