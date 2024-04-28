@@ -2,7 +2,7 @@ from datetime import date
 import json
 import random
 import string
-from typing import Union
+from typing import Optional, Union
 from fastapi import FastAPI, Request, Cookie, Form, Response, status
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
@@ -70,22 +70,21 @@ async def purchased(request:Request,total: str = Cookie(None),purchased: str = C
 
 
 @app.post("/cart/")
-async def post_cart(itemID:str = Form(...),purchase:str = Form(...),total:str = Form(...),cookieKey: str = Cookie(None)) -> RedirectResponse:
+async def post_cart(itemID:Optional[str] = Form(None), total:str = Form(...),Remove: Optional[str] = Form(None),Purchase: Optional[str] = Form(None),cookieKey: str = Cookie(None)) -> RedirectResponse:
 
-    item_id = str(itemID)
     cookieKey = cookieKey.replace("'",'"')
     cookieKey = json.loads(cookieKey)
-
-    if not bool(purchase):
-        purchased = ""
-        response = RedirectResponse(url="/cart/",status_code=302)
-        cookieKey.pop(item_id,None)
-        json.dumps(cookieKey)
-    else:
+    if not Remove:
         response = RedirectResponse(url="/purchased/",status_code=302)
         purchased = cookieKey
         cookieKey = ""
         json.dumps(purchased)
+    else:
+        purchased = ""
+        response = RedirectResponse(url="/cart/",status_code=302)
+        cookieKey.pop(str(itemID),None)
+        json.dumps(cookieKey)
+
     response.set_cookie(key="cookieKey",value=cookieKey,samesite="None")
     response.set_cookie(key="total",value=total,samesite="None")
     response.set_cookie(key="purchased",value=purchased)
@@ -107,10 +106,9 @@ async def post_cart(item_id:int,quantity: str = Form(...), cookieKey: str = Cook
     json.dumps(cookieKey)
 
     response.set_cookie(key="cookieKey",value=cookieKey,samesite="None")
-    print(cookieKey)
     return response
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="192.168.86 .33", port=80, reload=False, log_level="debug",
-                workers=1, limit_concurrency=1, limit_max_requests=15)
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=False, log_level="debug",
+                 limit_concurrency=50, limit_max_requests=15)

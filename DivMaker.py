@@ -46,7 +46,6 @@ class DivMaker:
         total = 0
         if not cookie: cookie = "{ }"
         cookie = cookie.replace("'",'"')
-        print(cookie)
         cookie = json.loads(cookie)
         for item in cookie:
             quantity = cookie[item]
@@ -60,14 +59,14 @@ class DivMaker:
             else:
                 price = '$'+price 
             link = row['link']
-            removeForm = f'<form method="post" target="_self"> <input type="hidden" id="purchase" name="purchase" value="False"><input type="hidden" id="itemID" name="itemID" value="{item}"><input type="submit" value="Remove">'
+            removeForm = f'<form method="post" target="_self"> <input type="hidden" id="itemID" name="itemID" value="{item}"><input type="submit" name="Remove" value="Remove">'
             item = row['name']
             inlineCSS = f'style="background-image:url({link})"'
             innerDiv = f'<div class="contentCart" >{item} <br> {price} </div>'   
             div+= f'<div class="saleitem" {inlineCSS}>{innerDiv}<div class="quantity">Ammount:{quantity}<br>{removeForm}</div></div>'
             total += int(quantity)*float(re.findall("\d+\.\d+", price)[-1])
         totalInput = f'<input type="hidden" id="total" name="total" value="{total}">'
-        purchaseForm = f'<form method="post" target="_self"> <input type="hidden" id="purchase" name="purchase" value="True"><input type="hidden" id="itemID" name="itemID" value="None">{totalInput}<input type="submit" value="PURCHASE">'
+        purchaseForm = f'<form method="post" target="_self" >{totalInput}<input type="submit" name="Purchase" value="PURCHASE">'
         
         div = Markup(div + "<br><br><br>total $" + str(total) + "<br>" + purchaseForm)
         return div
