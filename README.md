@@ -4,7 +4,16 @@
 ## Requirements
 Python, PostgreSQL Server \
 FastAPI, psycopg2, Pandas, Jinja2  \
-Uvicorn
+Uvicorn, sqlAlchemy, MarkupSafe \
+pydantic, python-multipart
+
+## Final Update 4/28/24
+[Website(unsecure)](www.cameronmilot.com)
+Finished Website
+Added option of a cart using cookies
+Added generation of purchase and reciept
+Cleaned up code
+Hosting through home server
 
 ## Current Progress
 
@@ -25,13 +34,11 @@ The back-end is in two parts, PostgreSQL and Python
    - The python/HTML/CSS/Jinja2 is to create the visible portion of the website and format it.
 
 
-## Needs Work
+## ~~Needs Work~~
 ### Coding Issues
 Currently the code for retrieving the database only happens at certain intervals and when the ability to possibly purchase comes up the database will not properly update. To fix this my current plan is to run a function asynchronously and have it retrieve an updated database on an interval (5 mins) and update the WebServers items dataframe when this happens. Another factor I might consider is updating the database earlier in case of a significant change in product level (Such as someone buying all but one item)
-
 ### Other Issues
 I'm not happy with the current look of the main or item page and I need to further update to enable "purchasing" of items.
-
 Update images to actually match item description.
 
 
