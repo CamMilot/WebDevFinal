@@ -72,12 +72,35 @@ body{
 .content{
   position: relative;
   color:black;
-  margin-top: 100px;
-  width: 500px;
-  left: 400px;
-  text-decoration: none;
+  margin-top: 0px;
+  width: 1000px;
+  left: 600px;
+  text-decoration: none; 
   font-size:75px;
 }
+
+.formContent{
+
+  position: relative;
+  color:black;
+  margin-top: 400px;
+  width: 500px;
+  left: 330px;
+  font-size:50px;
+  text-align: right;
+}
+
+input[type="number"]{
+  text-align: right;
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+
 
 .salelink{
   position: absolute;

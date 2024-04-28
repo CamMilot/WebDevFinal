@@ -71,11 +71,22 @@ body{
 .content{
   position: absolute;
   color:black;
-  margin-top: 150px;
+  margin-top: 140px;
+  margin-left: -150px;
   width: 150px;
   text-decoration: none;
   font-size:small;
 }
+
+.contentCart{
+  position: absolute;
+  color:black;
+  margin-top: 160px;
+  width: 150px;
+  text-decoration: none;
+  font-size:small;
+}
+
 
 .salelink{
   position: absolute;
@@ -89,4 +100,11 @@ body{
   text-align: center;
 }
 
-
+.quantity{
+  position: absolute;
+  color:black;
+  margin-top: -35px;
+  width: 150px;
+  text-decoration: none;
+  font-size:small;
+}
