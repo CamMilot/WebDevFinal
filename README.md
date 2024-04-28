@@ -8,7 +8,7 @@ Uvicorn, sqlAlchemy, MarkupSafe \
 pydantic, python-multipart
 
 ## Final Update 4/28/24
-[Website(unsecure)](www.cameronmilot.com)
+[Website(unsecure)](http://www.cameronmilot.com)
 Finished Website
 Added option of a cart using cookies
 Added generation of purchase and reciept
