@@ -10,7 +10,6 @@ from fastapi.templating import Jinja2Templates
 from markupsafe import Markup
 import uvicorn
 from DivMaker import DivMaker
-from pydantic import BaseModel
 
 
 # Connect to postgres DB
@@ -21,8 +20,6 @@ mainDM = DivMaker(tableName=tableName,postgresArgs=postArgs)
 
 templates = Jinja2Templates(directory="templates")
 
-class Cookies(BaseModel):
-    cValue: str
 
 linebreaks = Markup('<br>'*10)
 

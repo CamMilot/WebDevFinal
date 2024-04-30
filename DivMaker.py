@@ -3,7 +3,6 @@ import pandas as pd
 import psycopg2
 from markupsafe import Markup
 import re
-from sqlalchemy import create_engine
 
 class DivMaker:
     items = []
